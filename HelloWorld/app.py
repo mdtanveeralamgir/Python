@@ -33,3 +33,10 @@ num.reverse() #Desc order
 num2 = num.copy() #Simply returns the copy of list
 # num.clear() #Remove everything
 print(num)
+
+#Unpacking
+"""
+coordinates = [1,2,3]
+x, y, z = coordinates #Each item starting from index 0 - end will assign to x,y,z respectavly
+print(y) #print 2
+"""
