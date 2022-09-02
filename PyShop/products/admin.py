@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 #importing Product from model which is in current dir
-from .models import Product
+from .models import Product, Offer
 
 #Adding Product table in admin panel
 # admin.site.register(Product)
@@ -19,5 +19,9 @@ class ProductAdmin(admin.ModelAdmin):
 #Register the Product table using new class ProductAdmin 
 admin.site.register(Product, ProductAdmin)
 
+class OfferAdmin(admin.ModelAdmin):
+    list_display = ('code', 'description', 'discount')
+
+admin.site.register(Offer, OfferAdmin)
 
 
