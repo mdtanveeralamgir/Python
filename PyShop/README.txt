@@ -24,3 +24,15 @@ Folder structure of products app
     - models.py //define classes of new type for modeling the concepts of new type. like: products,category,review
     - tests.py //automated test
     - views.py //resides views
+
+Registering products app module in python
+    - Locate apps.py file in products package
+    - app.py is the config file for product package
+    - add the path of app.py file in "INSTALLED_APPS" list inside pyshop/settings.py
+
+Migration
+    - In models inside products package define the table structure
+    - follow steps in "Registering products app module in python"
+    - cmd: "python3 manage.py makemigrations" to make the migration file
+    - The above command will create a file in products/migration folder containing all the details of creating a table
+    - cmd: "python3 manage.py migrate" to run the migration files
