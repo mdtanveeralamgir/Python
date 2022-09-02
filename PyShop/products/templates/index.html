@@ -9,9 +9,10 @@
 <body>
     <h1>Products</h1>
     <ul>
-        <li>Inem 1</li>
-        <li>Inem 2</li>
-        <li>Inem 3</li>
+        <!-- Template tag in django-->
+        {% for product in products %}
+            <li>{{ product.name }} (${{ product.price }}) ({{ product.stock }})</li>
+        {% endfor %}
     </ul>
 </body>
 </html>
