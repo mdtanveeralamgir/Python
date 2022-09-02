@@ -36,3 +36,11 @@ Migration
     - cmd: "python3 manage.py makemigrations" to make the migration file
     - The above command will create a file in products/migration folder containing all the details of creating a table
     - cmd: "python3 manage.py migrate" to run the migration files
+
+Create a super user
+    - cmd: python3 manage.py createsuperuser
+
+Adding a new Package(module) in admin panel
+    - Inside products/admin.py
+        - Import Product from model
+        - Register Product

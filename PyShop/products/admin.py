@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+#importing Product from model which is in current dir
+from .models import Product
+
+
+#Adding Product table in admin panel
+admin.site.register(Product)
