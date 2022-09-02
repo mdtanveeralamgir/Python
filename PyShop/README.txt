@@ -44,3 +44,9 @@ Adding a new Package(module) in admin panel
     - Inside products/admin.py
         - Import Product from model
         - Register Product
+
+
+Templates
+    - In products/views import Product from model
+    - User the Product model to get all data
+    - Create a dir in products name "templates". A special name for dir for django to know where to finds templates
